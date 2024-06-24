@@ -1,0 +1,70 @@
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+// CSS pentru index.blade.php || Frontend
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #f0f8ff;
+    padding: 100px 0;
+    text-align: center;
+    .btn-primary,
+    .btn-secondary {
+        margin: 10px;
+    }
+}
+.column {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+    height: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Include padding-ul în dimensiunea totală */
+}
+
+.marginSection {
+    padding: 5%;
+    margin-left: 18%;
+}
+
+.relative img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    /* Elimină padding-ul din imagine */
+}
+
+.absolute img {
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+div.absolute {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
