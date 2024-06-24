@@ -62,14 +62,16 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
-        $collection = Collection::findOrFail($collection);
-        return view('collections.edit', compact('collection'));
+        //
     }
 
-  
+    /**
+     * Update the specified resource in storage.
+     */
     public function update(Request $request, Collection $collection):RedirectResponse
     {
         $collection->update($request->all());
+
         return redirect()->back()->with('success', 'Updated');
     }
 
